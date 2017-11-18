@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quiz_card_view"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/question_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/questionBackground"
+            android:text="question"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageButton
+                android:id="@+id/choice_1_image_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_margin="4dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/choice_2_image_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_margin="4dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
